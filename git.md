@@ -1,10 +1,10 @@
-patch an old tag (howto)
+## Howto patch an old tag in git
 
-Prerequisite
+#### Prerequisite
 1. git installed and corresponding git project (let’s call it „xyz“) is cloned to your local machine
 2. For instance, we assume this version tag exists: v1.14.0 and want create v.1.14.1 based on a specific commit „0cffa6f0“
 
-Howto
+#### Howto
 1. in shell, change to xyz project folder
 2. be sure to be up-to-date, execute 
 
