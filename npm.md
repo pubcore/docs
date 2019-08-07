@@ -1,13 +1,19 @@
 # pubcore npm usage
 
+## auto select registries on npm publish based on package's scope
+(if it should _not_ published to registry.npmjs.org)  
+see
+https://docs.npmjs.com/misc/scope#associating-a-scope-with-a-registry
+
 ## initial publish
+	make sure two factor authentication is enabled
 
   make sure project is named `@pubcore/<project name>` in `package.json` or do it so with (please check that no `pubcore-` appears in `<project-name>`)
   ```
   npm init --scope=pubcore
   ```
-  
-  
+
+
   login to your npm account
   ```
   npm login
