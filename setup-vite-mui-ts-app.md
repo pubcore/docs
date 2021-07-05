@@ -2,7 +2,7 @@
 
 #### Setup a web-app with vite, material-ui, prettier, eslint and TypeScript
 
-- Environment: node v14.17.0, npm v7.14.0, git client
+- Environment: node v14.17.0, npm v7.14.0, git client on macOS
 - «scope» ... a scope/group name
 
 ```
