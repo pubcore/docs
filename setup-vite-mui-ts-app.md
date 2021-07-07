@@ -17,10 +17,12 @@ npm init
 npm i -D eslint
 npx eslint --init
 
-# setup linter for react-hooks
-npm i -D eslint-plugin-react-hooks
+# setup linter for react-hooks and TypeScript
+npm i -D eslint-plugin-react-hooks @typescript-eslint/parser @typescript-eslint/eslint-plugin
 npx -p json json -I -f .eslintrc.json -e \
-"this.plugins = [].concat(this.plugins).concat('react-hooks')"
+"this.plugins = [].concat(this.plugins).concat(['@typescript-eslint', 'react-hooks'])"
+npx -p json json -I -f .eslintrc.json -e \
+"this.extends = [].concat(this.extends).concat('plugin:@typescript-eslint/recommended')"
 npx -p json json -I -f .eslintrc.json -e \
 "this.rules['react-hooks/rules-of-hooks'] = 'error'"
 npx -p json json -I -f .eslintrc.json -e \
@@ -29,7 +31,7 @@ npx -p json json -I -f .eslintrc.json -e \
 # setup prettier
 npm i -D prettier eslint-config-prettier eslint-plugin-prettier
 npx -p json json -I -f .eslintrc.json -e \
-"this.extends = [].concat(this.extends).concat('plugin:prettier/recommended')"
+"this.extends = [].concat(this.extends).concat('prettier')"
 npx prettier --write .
 
 # setup git repo
