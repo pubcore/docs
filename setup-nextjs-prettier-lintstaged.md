@@ -2,16 +2,21 @@
 From scratch on unix-like system
 
 ### Steps
-#### 1. Ideate name of project, [kebab case](https://en.wikipedia.org/wiki/Letter_case#Kebab_case) is required (e.g. this-is-kebab-case) 
+#### 1. Ideate name of project «project-name».
+Typing in [kebab case](https://en.wikipedia.org/wiki/Letter_case#Kebab_case) is required (e.g. this-is-kebab-case) 
 
-#### 2. Create nextjs project with default settings
+#### 2. Create nextjs project
 ```
-npx create-next-app@latest --no-tailwind --ts --eslint --src-dir --app
+npx create-next-app@latest --ts --eslint --src-dir --app
 ```
-#### 3. Change into created project directory execute commands below. [^1]
+#### 3. Change into just created project directory 
 ```
+cd «project-name»
+```
+#### 4. install/configure pre-commit hooks with husky, prettier [^1]
+```
+# To be executed in project directory
 npm i eslint-config-prettier prettier lint-staged husky && 
-npm pkg set scripts.dev="next dev --turbo"
 npm pkg set scripts.prepare="husky install" &&
 npx husky install &&
 npx husky add .husky/pre-commit "npm run lint" &&
