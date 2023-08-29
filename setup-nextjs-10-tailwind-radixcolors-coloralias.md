@@ -1,6 +1,6 @@
-## Add dark-theme support with radix-ui colors to a fresh tailwind project
-* [mui base-ui](https://mui.com/base-ui/getting-started/) 
-* radix color + typography by [windy-radix-palette](https://windy-radix-palette.vercel.app)
+## Add dark-theme support with radix-ui colors to a fresh Next.js tailwind project
+radix-ui/colors brings us out-of the box dark-theme support
+And setup includes one example of "primary" color alias.
 
 ```zsh
 npm i @tailwindcss/typography @radix-ui/colors windy-radix-palette windy-radix-typography &&
